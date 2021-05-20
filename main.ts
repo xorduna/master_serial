@@ -14,7 +14,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Sad)
 })
 input.onButtonPressed(Button.B, function () {
-	custom.read_epoch()
+    custom.read_epoch()
     custom.read_left()
     custom.read_right()
 })
