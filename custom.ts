@@ -167,7 +167,7 @@ namespace custom {
     //% block
     export function read_epoch(): void{
         let buf = pins.createBuffer(2);
-        buf[0] = 0x12 //Read R
+        buf[0] = 0x12 //Read Epoch
         buf[1] = 0
         pins.i2cWriteBuffer(0x04, buf);    
         let num = pins.i2cReadNumber(0x04, NumberFormat.Int16LE)
